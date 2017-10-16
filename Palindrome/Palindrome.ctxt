@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Palindrome
+comment1.params=wd
+comment1.target=Palindrome(java.lang.String)
+comment2.params=
+comment2.target=boolean\ testPalindrome()
+comment3.params=
+comment3.target=void\ testShitlord()
+numComments=4
