@@ -1,5 +1,15 @@
 #BlueJ class context
 comment0.target=ChargeAccount
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment1.params=
+comment1.target=void\ pastBalance()
+comment2.params=
+comment2.target=void\ additionalCharges()
+comment3.params=
+comment3.target=void\ newBalance()
+comment4.params=
+comment4.target=void\ monthlyInterest()
+comment5.params=
+comment5.target=void\ paymentDue()
+comment6.params=
+comment6.target=void\ printInConsole()
+numComments=7
