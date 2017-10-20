@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.Random;
 public class RockPaperScissors
 {
-    public void China() {
+    public static void main(String[]args) {
         //Declaring Instance Variables
         String personPlay;
         String computerPlay = "O";
@@ -18,6 +18,7 @@ public class RockPaperScissors
         
         //Get player's play -- note that this is stored as a string
         Scanner scan = new Scanner(System.in);
+        System.out.println("Pick Rock, Paper or Scissors (Type R for Rock : P for Paper : S for Scissors)");
         personPlay = scan.next();
         
         //Make player's play uppercase for ease of comparison
@@ -36,6 +37,7 @@ public class RockPaperScissors
         else if (computerInt == 2){
             computerPlay = "S";
         }
+        
         //Print computer's play
         if (computerPlay.equals("R")){
             System.out.println("Computer Picked : Rock");
@@ -46,7 +48,51 @@ public class RockPaperScissors
         if (computerPlay.equals("S")){
             System.out.println("Computer Picked : Scissors");
         }
-        //See who won.
         
+        //Print player's play
+        if (personPlay.equals("R")){
+            System.out.println("User Picked : Rock");
+        }
+        if (personPlay.equals("P")){
+            System.out.println("User Picked : Paper");
+        }
+        if (personPlay.equals("S")){
+            System.out.println("User Picked : Scissors");
+        }
+        
+        //See who won.
+        if (personPlay.equals("R")){
+            if (computerPlay.equals("R")){
+                System.out.println("TIE");
+            }
+            if (computerPlay.equals("P")){
+                System.out.println("COMPUTER WINS");
+            }
+            if (computerPlay.equals("S")){
+                System.out.println("USER WINS");
+            }
+        }
+        if (personPlay.equals("P")){
+            if (computerPlay.equals("R")){
+                System.out.println("USER WINS");
+            }
+            if (computerPlay.equals("P")){
+                System.out.println("TIE");
+            }
+            if (computerPlay.equals("S")){
+                System.out.println("COMPUTER WINS");
+            }
+        }
+        if (personPlay.equals("S")){
+            if (computerPlay.equals("R")){
+                System.out.println("COMPUTER WINS");
+            }
+            if (computerPlay.equals("P")){
+                System.out.println("USER WINS");
+            }
+            if (computerPlay.equals("S")){
+                System.out.println("TIE");
+            }
+        }
     }
 }
