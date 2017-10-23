@@ -12,8 +12,8 @@ public class PowersOf2
         {
             double numOf2;
             double limitOf2;
-            double nextNumOf2 = 1;
-            double prevNumOf2 = 1;
+            double nextNumOf2 = 2;
+            double prevNumOf2 = 2;
             double exponent = 2;
             
             Scanner scan = new Scanner(System.in);
@@ -22,10 +22,11 @@ public class PowersOf2
             
             while (exponent != limitOf2) {
                 prevNumOf2 = nextNumOf2;
-                nextNumOf2 = Math.pow(prevNumOf2, exponent);
+                nextNumOf2 = Math.pow(2, exponent+1);
                 
                 exponent++;
             }
             System.out.println (nextNumOf2);
+            System.out.println ("Your Power of 2 = 2^"+ exponent);
         }
 }
