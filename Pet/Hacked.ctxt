@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Hacked
+comment1.params=m\ d
+comment1.target=Hacked(double,\ boolean)
+comment2.params=
+comment2.target=double\ getMoney()
+comment3.params=
+comment3.target=boolean\ getDead()
+numComments=4
