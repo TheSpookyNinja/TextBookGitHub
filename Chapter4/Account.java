@@ -27,20 +27,20 @@ public class Account
           System.out.println("You cannot withdraw over your current balance.");
         }
         else {
-            balance = balance - amount;
+            this.balance = this.balance - amount;
         }
   }
   //----------------------------------------------
   // Adds deposit amount to balance.
   //----------------------------------------------
   public void deposit(double amount){
-      balance = balance + amount;
+      this.balance = this.balance + amount;
   }
   //----------------------------------------------
   // Returns balance.
   //----------------------------------------------
   public double getBalance(){
-      return balance;
+      return this.balance;
   }
   //----------------------------------------------
   // Returns a string containing the name, account number, and balance.
@@ -52,7 +52,7 @@ public class Account
   // Deducts $10 service fee
   //----------------------------------------------
   public void chargeFee(){
-      balance = balance - 10.0;
+      this.balance = this.balance - 10.0;
   }
   //----------------------------------------------
   // Changes the name on the account

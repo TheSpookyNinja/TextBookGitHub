@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Car
+comment1.params=yr\ md
+comment1.target=Car(int,\ java.lang.String)
+comment2.params=yr
+comment2.target=int\ getYear(int)
+comment3.params=md
+comment3.target=java.lang.String\ getModel(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
