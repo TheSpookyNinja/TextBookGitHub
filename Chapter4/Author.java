@@ -1,58 +1,44 @@
 import java.util.Scanner;
 
-
 public class Author
 {
     //Instance Variables
     private String firstName;
     private String lastName;
-    private int bookNumber;
-    private String publisher;
+    private int age;
     
     //Initialize Scanner
     Scanner scan = new Scanner(System.in);
     
-    //Main Methods Declaring Variables and Methods
+    //Main Method
     public Author(String fN, String lN)
     {
         this.firstName = fN;
         this.lastName = lN;
-        setBookNumber();
-        setPublisher();
+        setAge();
     }
     
-    //Create Setters Methods
-    public void setBookNumber()
+    //Setter Method
+    public void setAge()
     {
-        System.out.println("How many books has this author written?");
-        bookNumber = scan.nextInt();
+        System.out.println("What is the author's age?");
+        this.age = scan.nextInt();
     }
     
-    public void setPublisher()
-    {
-        System.out.println("What is the name of the author's publisher?");
-        publisher = scan.nextLine();
-    }
-    
-    //Create Getter Methods
+    //Getter Methods
     public String getName()
     {
-        return this.lastName + " , " + this.firstName;
+        return "Name : " + this.firstName + " " + this.lastName;
     }
     
-    public int getBookNumber()
+    public int getAge()
     {
-        return this.bookNumber;
+        return this.age;
     }
     
-    public String getPublisher()
-    {
-        return this.publisher;
-    }
-    
-    //String toString() Method
+    //String toString method
     public String toString()
     {
-        return "Author : " + getName() + "\tPublisher : " + getPublisher();
+        return "Author: " + getName() + "\tAge: " + getAge();
     }
 }

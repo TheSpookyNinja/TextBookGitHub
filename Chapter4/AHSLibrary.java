@@ -1,8 +1,10 @@
+import java.util.Scanner;
+
 public class AHSLibrary
 {
-    public static void main (String[]args)
+    public AHSLibrary()
     {
-        Library AHS = new Library();
-        System.out.print(AHS);
+        
+        
     }
 }

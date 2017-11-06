@@ -1,16 +1,26 @@
+import java.util.Scanner;
+
 public class Library
 {
-    private Book book1;
-    private Book book2;
-    private Book book3;
-    private Book book4;
-    private Book book5;
+    //Instance Variables
+    private Book[] books;
     private int numOfBooks;
     
-    public Library()
+    public Library(Book[] b)
     {
+        this.books = b;
+        numOfBooks = 0;
+        
         
     }
-
     
+    //Getter Methods
+    public int getNumberOfBooks()
+    {
+        return numOfBooks;
+    }
+    
+    //"List" Methods
+    
+    //String toString Method
 }

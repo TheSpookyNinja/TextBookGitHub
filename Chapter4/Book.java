@@ -1,58 +1,58 @@
 import java.util.Scanner;
 
-
 public class Book
 {
     //Instance Variables
-    private Author writer;
+    private Author bookAuthor;
     private String title;
-    private int numOfPages;
     private String genre;
+    private int pageCount;
     
     //Initialize Scanner
     Scanner scan = new Scanner(System.in);
     
-    //Main Methods Declaring Variables and Methods
+    //Main Method
     public Book()
     {
-       System.out.println("What is the author's first name?");
-       String first = scan.nextLine();
-       System.out.println("What is the author's last name?");
-       String last = scan.nextLine();
-       author = new Author(first, last);
-       setTitle();
-       setGenre();
-       setPages();
+        System.out.println("What is your authors first name?");
+        String fN = scan.nextLine();
+        System.out.println("What is your authors last name?");
+        String lN = scan.nextLine();
+        
+        bookAuthor = new Author(fN, lN);
+        setTitle();
+        setGenre();
+        setPageCount();
     }
     
-    //Create Setters Methods
+    //Setter Methods
     public void setTitle()
     {
-        System.out.println("What is the title of the book?");
+        System.out.println("");
         title = scan.nextLine();
     }
     
     public void setGenre()
     {
-        System.out.println("What is the genre of the book?");
+        System.out.println("");
         genre = scan.nextLine();
     }
     
-    public void setPages()
+    public void setPageCount()
     {
-        System.out.println("How many pages does the book have?");
-        numOfPages = scan.nextInt();
+        System.out.println("");
+        pageCount = scan.nextInt();
     }
     
-    //Create Getter Methods
+    //Getter Methods
     public Author getAuthor()
     {
-        return author;
+        return bookAuthor;
     }
     
     public String getAuthorName()
     {
-        return author.getName();
+        return bookAuthor.getName();
     }
     
     public String getTitle()
@@ -65,16 +65,16 @@ public class Book
         return this.genre;
     }
     
-    public int getPageNums()
+    public int getPages()
     {
-        return this.numOfPages();
+        return this.pageCount;
     }
     
-    //String toString() Method
+    //String toString Method
     public String toString()
     {
         String output;
-        output = "Book Title: " + getTitle() + "\tBook Author: " + getAuthor() + "\tGenre: " + getGenre() + "\tNumber Of Pages: " + getPageNums();
+        output = "Book Title: " + getTitle() + "\tBook Author: " + getAuthor() + "\tGenre: " + getGenre() + "\tPage Count: " + getPages();
         return output;
     }
 }
