@@ -1,28 +1,45 @@
+import java.util.Scanner;
+
+
 public class Car
 {
+    //Instance Variables
     private int year;
     private String model;
+    private String make;
     
-    public Car(int yr, String md)
+    //Initialize Scanner
+    Scanner scan = new Scanner(System.in);
+    
+    //Main Method
+    public Car(int y, String ml, String mk)
     {
-        this.year = yr;
-        this.model = md;
+      this.year = y;
+      this.model = ml;
+      this.make = mk;
     }
     
-    public int getYear(int yr)
+    //Setter Methods
+    public void setYear()
     {
-        return year;
+        System.out.println("What is the year?");
+        this.year = scan.nextInt(); 
     }
     
-    public String getModel(String md)
+    public void setModel()
     {
-        return model;
+        System.out.println("What is the model?");
+        this.model = scan.nextLine();
     }
     
-    public String toString()
+    public void setMake()
     {
-        return "This is a " + model + " built in " + year;
+        System.out.println("What is the make?");
+        this.make = scan.nextLine();
     }
     
-    //public boolean equals(Car otherCar)
+    //Getter methods
+    
+    //String toString Method
+    
 }
