@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Account
+comment1.params=
+comment1.target=void\ Account()
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=
+comment3.target=int\ setKey()
+comment4.params=key
+comment4.target=int\ lock(int)
+comment5.params=key
+comment5.target=int\ unlock(int)
+comment6.params=
+comment6.target=boolean\ locked()
+numComments=7
